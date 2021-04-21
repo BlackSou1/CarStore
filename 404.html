@@ -3,7 +3,7 @@
 <head>
 	<title>404 Not Found</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -16,7 +16,8 @@
 	<meta name="theme-color" content="#000000">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/bundle.min.js" defer></script>
 </head>
 <body>
 	<header class="header">
@@ -51,12 +52,16 @@
 							<p class="header__top-item-text">Checkout</p>
 						</a>
 					</div>
-					<a class="header__top-search" href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+					<a class="header__top-search" href="#" aria-label="Search">
+						<i class="fas fa-search"></i>
+					</a>
 				</div>
 			</div>
 			<hr class="header__hr">
 			<div class="header__content">
-				<a class="header__logo" href="/"><img class="header__logo-img" src="img/logo.png" alt="Logo"></a>
+				<a class="header__logo" href="/" aria-label="Homepage">
+					<img class="header__logo-img" src="img/logo.png" alt="Logo">
+				</a>
 				<div class="header__right">
 					<div class="header__phone-container">
 						<a class="header__phone" href="tel:+1234567890">
@@ -93,16 +98,21 @@
 						<a class="header__bottom-nav-link" href="#">Locations</a>
 						<a class="header__bottom-nav-link" href="#">Contacts</a>
 					</nav>
-					<a class="header__bottom-search" href="#" aria-label="Search"><i class="fas fa-search"></i></a>
-					<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+					<a class="header__bottom-search" href="#" aria-label="Search">
+						<i class="fas fa-search"></i>
+					</a>
+					<button class="header__hamburger hamburger__button" aria-label="Open navigation">
+						<i class="fas fa-bars"></i>
+					</button>
 				</div>
 			</div>
 		</nav>
 	</header>
 	<section class="error-404">
 		<div class="page-width">
-			<div class="error-404__article">
-				<h2 class="error-404__title"><span class="error-404__number">404</span><br>Not Found</h2>
+			<div class="error-404__wrapper">
+				<p class="error-404__number">404</p>
+				<h2 class="error-404__title">Not Found</h2>
 				<p class="error-404__text">The requested page was not found on our server. It doesn't exist or it may have been removed.</p>
 			</div>
 		</div>
@@ -154,11 +164,21 @@
 						<input class="footer__newsletter-input" type="text">
 						<button class="footer__newsletter-submit" type="submit">Submit</button>
 						<div class="footer__newsletter-social">
-							<a class="footer__newsletter-social-item" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-							<a class="footer__newsletter-social-item" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-							<a class="footer__newsletter-social-item" href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-							<a class="footer__newsletter-social-item" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-							<a class="footer__newsletter-social-item" href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+							<a class="footer__newsletter-social-item" href="#" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a class="footer__newsletter-social-item" href="#" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a class="footer__newsletter-social-item" href="#" target="_blank">
+								<i class="fab fa-google-plus-g"></i>
+							</a>
+							<a class="footer__newsletter-social-item" href="#" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a class="footer__newsletter-social-item" href="#" target="_blank">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -199,14 +219,29 @@
 				</div>
 				<hr class="footer__divider2 footer__divider">
 				<div class="footer__bottom">
-					<p class="footer__bottom-text">CarStore <span class="footer__bottom-text-span">© 2017 . All Rights Reserved.</span></p>
+					<p class="footer__bottom-text">
+						CarStore
+						<span class="footer__bottom-text-span"> © 2017 . All Rights Reserved.</span>
+					</p>
 					<div class="footer__bottom-cards">
-						<a class="footer__bottom-card" href="#"><i class="fab fa-cc-amex"></i></a>
-						<a class="footer__bottom-card" href="#"><i class="fab fa-cc-paypal"></i></a>
-						<a class="footer__bottom-card" href="#"><i class="fab fab fa-cc-visa"></i></a>
-						<a class="footer__bottom-card" href="#"><i class="fab fa-cc-mastercard"></i></a>
-						<a class="footer__bottom-card" href="#"><i class="far fa-closed-captioning"></i></a>
-						<a class="footer__bottom-card" href="#"><i class="fab fa-cc-diners-club"></i></a>
+						<a class="footer__bottom-card" href="#">
+							<i class="fab fa-cc-amex"></i>
+						</a>
+						<a class="footer__bottom-card" href="#">
+							<i class="fab fa-cc-paypal"></i>
+						</a>
+						<a class="footer__bottom-card" href="#">
+							<i class="fab fab fa-cc-visa"></i>
+						</a>
+						<a class="footer__bottom-card" href="#">
+							<i class="fab fa-cc-mastercard"></i>
+						</a>
+						<a class="footer__bottom-card" href="#">
+							<i class="far fa-closed-captioning"></i>
+						</a>
+						<a class="footer__bottom-card" href="#">
+							<i class="fab fa-cc-diners-club"></i>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -229,6 +264,5 @@
 			</nav>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
 </body>
 </html>
